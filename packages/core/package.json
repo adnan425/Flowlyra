@@ -1,0 +1,26 @@
+{
+  "name": "@flowlyra/core",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Flowlyra analysis engine.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node init && tsc"
+  },
+  "dependencies": {
+    "@flowlyra/graph": "*",
+    "@flowlyra/parser-typescript": "*",
+    "@flowlyra/tracer": "*"
+  }
+}

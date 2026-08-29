@@ -53,10 +53,10 @@ profile-*
 .idea
 
 # vscode
-.vscode
 *code-workspace
 
 # clinic
 profile*
 *clinic*
 *flamegraph*
+config.bat

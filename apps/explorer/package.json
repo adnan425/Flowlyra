@@ -1,0 +1,6 @@
+{
+  "name": "@flowlyra/explorer",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Interactive feature-flow explorer. React app will land here."
+}

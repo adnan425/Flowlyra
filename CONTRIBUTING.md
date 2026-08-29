@@ -46,9 +46,30 @@ Flowlyra should remain:
 
 ## Development setup
 
-The implementation is still being established.
+This repository is an npm workspaces monorepo. The first Fastify API is JavaScript.
 
-Until the first development environment is committed, please use issues to discuss proposed contributions. This section will be updated with exact install, test, lint, and build commands as soon as the first runnable version lands.
+```text
+app.js                   Fastify JavaScript API
+lib/                     repository scanner
+routes/                  health, analyze, and trace
+apps/explorer            Interactive explorer (React, not started)
+packages/core            Analysis engine
+packages/graph           Graph model and schema
+packages/tracer          Feature-flow tracing
+packages/parser-typescript   TypeScript / JavaScript parser
+```
+
+Requires Node.js 20+.
+
+```bash
+npm install
+npm run dev
+npm test
+```
+
+`npm run dev` starts the Fastify API at http://localhost:3000.
+
+Larger analysis, parser, and visualization work should still start as an issue when the change is architectural.
 
 ## Good first contributions
 
