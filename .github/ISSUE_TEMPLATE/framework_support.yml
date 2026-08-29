@@ -1,0 +1,60 @@
+name: Framework support
+description: Propose support for a framework or ecosystem.
+title: "[Framework]: "
+labels:
+  - framework
+  - help wanted
+body:
+  - type: input
+    id: framework
+    attributes:
+      label: Framework
+      placeholder: Next.js, FastAPI, Spring Boot...
+    validations:
+      required: true
+
+  - type: input
+    id: versions
+    attributes:
+      label: Relevant versions
+      placeholder: "15.x"
+
+  - type: textarea
+    id: conventions
+    attributes:
+      label: What conventions should Flowlyra understand?
+      description: Routes, controllers, services, ORM models, events, jobs, etc.
+      placeholder: |
+        Routes:
+        Controllers:
+        Services:
+        Data access:
+        Events/jobs:
+    validations:
+      required: true
+
+  - type: input
+    id: example
+    attributes:
+      label: Public example repository
+      description: Link to a small representative project if possible.
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Example feature flow
+      placeholder: |
+        LoginPage -> POST /api/login -> AuthService -> User model
+    validations:
+      required: true
+
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Would you like to help implement this?
+      options:
+        - "Yes"
+        - "Maybe"
+        - "No"
+    validations:
+      required: true

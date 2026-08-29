@@ -1,0 +1,58 @@
+name: Feature request
+description: Suggest a new capability or improvement for Flowlyra.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should Flowlyra solve?
+      description: Start with the developer problem, not the implementation.
+      placeholder: When I try to understand...
+    validations:
+      required: true
+
+  - type: textarea
+    id: experience
+    attributes:
+      label: Desired experience
+      description: What should the user be able to ask, run, click, or see?
+      placeholder: |
+        flowlyra trace "..."
+        should show...
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example
+      description: A concrete feature flow or public repository helps a lot.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Feature tracing
+        - Static analysis
+        - Call / dependency graph
+        - CLI
+        - Visualization
+        - Framework intelligence
+        - Language support
+        - GitHub integration
+        - IDE integration
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for similar requests.
+          required: true
