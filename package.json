@@ -1,0 +1,49 @@
+{
+  "name": "flowlyra",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Open-source code intelligence for tracing and visualizing how features flow through a codebase.",
+  "main": "app.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "node init && fastify start -w -l info -P app.js",
+    "start": "node init && fastify start -l info app.js",
+    "test": "node --test test/lib/*.test.js test/plugins/*.test.js test/routes/*.test.js test/routes/api/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adnan425/Flowlyra.git"
+  },
+  "keywords": [
+    "code-intelligence",
+    "static-analysis",
+    "code-visualization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adnan425/Flowlyra/issues"
+  },
+  "homepage": "https://github.com/adnan425/Flowlyra#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@fastify/autoload": "^6.0.0",
+    "@fastify/sensible": "^6.0.0",
+    "fastify": "^5.0.0",
+    "fastify-cli": "^7.4.1",
+    "fastify-plugin": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.8",
+    "typescript": "~5.9.2"
+  }
+}
