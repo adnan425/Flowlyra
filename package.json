@@ -13,8 +13,8 @@
     "test": "test"
   },
   "scripts": {
-    "dev": "node init && fastify start -w -l info -P app.js",
-    "start": "node init && fastify start -l info app.js",
+    "dev": "fastify start -w -l info -P app.js",
+    "start": "fastify start -l info app.js",
     "test": "node --test test/lib/*.test.js test/plugins/*.test.js test/routes/*.test.js test/routes/api/*.test.js"
   },
   "repository": {
